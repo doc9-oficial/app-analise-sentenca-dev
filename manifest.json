@@ -1,0 +1,60 @@
+{
+    "name": "app-analise-sentenca-dev",
+    "version": "1.0.0",
+    "description": "Análise de Sentença – Which AI: Gera resumo técnico e identifica pontos de recurso em uma sentença",
+    "auth": {
+        "description": {
+            "title": "Configuração de Acesso",
+            "body": "Configure suas credenciais para acessar o serviço.",
+            "footer": "As credenciais são armazenadas com segurança.",
+            "link": ""
+        },
+        "params": [            {
+                "name": "whichToken",
+                "type": "string",
+                "inputType": "text",
+                "required": true,
+                "label": "Token do Which"
+            }       
+        ]
+    },
+    "functions": {        
+        "analisarSentenca": {
+            "script": "dist/analisarSentenca.js",
+            "description": "Analisa sentença para identificar pontos recorríveis",
+            "category": "ia",
+            "values": {
+                "parametro": "valor"
+            },
+            "params": [
+                {
+                    "name": "parametro",
+                    "type": "string",
+                    "inputType": "text",
+                    "required": true,
+                    "label": "Parâmetro principal"
+                }
+            ]        },
+        "resumirSentenca": {
+            "script": "dist/resumirSentenca.js",
+            "description": "Gera resumo técnico de sentença",
+            "category": "ia",
+            "values": {
+                "parametro": "valor"
+            },
+            "params": [
+                {
+                    "name": "parametro",
+                    "type": "string",
+                    "inputType": "text",
+                    "required": true,
+                    "label": "Parâmetro principal"
+                }
+            ]        }    },
+    "config": {
+        "timeout": 60000,
+        "max_retries": 3,
+        "cache_ttl": 3600
+    },
+    "mcp": true
+}

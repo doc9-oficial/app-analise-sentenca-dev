@@ -1,0 +1,19 @@
+{
+    "name": "app-analise-sentenca-dev",
+    "version": "1.0.0",
+    "description": "Análise de Sentença – Which AI: Gera resumo técnico e identifica pontos de recurso em uma sentença",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "clean": "rm -rf dist"
+    },
+    "dependencies": {
+        "docgo-sdk": "github:doc9-oficial/docgo-sdk-js"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "typescript": "^5.0.0"
+    }
+}

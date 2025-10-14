@@ -21,6 +21,7 @@
   },
   "functions": {
     "analisarSentenca": {
+      "name": "Analisar Sentença - Which AI",
       "script": "dist/analisarSentenca.js",
       "description": "Analisa sentença para identificar pontos recorríveis",
       "category": "ia",
@@ -43,6 +44,7 @@
       }
     },
     "resumirSentenca": {
+      "name": "Resumir Sentença - Which AI",
       "script": "dist/resumirSentenca.js",
       "description": "Gera resumo técnico de sentença",
       "category": "ia",
